@@ -1,0 +1,7 @@
+
+# Ignoring IDE settings and reference PDFs
+.idea
+*.pdf
+
+# Ignoring zip files
+*.zip

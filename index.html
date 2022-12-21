@@ -1,0 +1,56 @@
+<!--
+Full Name: Ali Rashid
+Date Created: 12/20/2022
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scrabble Web App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- jQuery library, plugins, and my JS files, probably don't need the validation plugin  -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/scrabble_v2.js"></script>
+
+</head>
+<body>
+
+<!-- Container for game info -->
+<div class="top-container">
+    <div>
+        <h2 class="title">Mini-Scrabble</h2>
+    </div>
+    <div class="remaining-tile-count">Remaining Tiles: </div>
+    <div class="scrabble-word">Current Word: </div>
+    <div class="displayed-score">Word Score: </div>
+    <div class="total-score">Total Score: </div>
+</div>
+
+<!-- Container for scrabble board and rack area -->
+<div class="middle-container">
+    <div class="scrabble-board-container">
+        <div id="board"></div>
+    </div>
+    <div class="scrabble-rack-container">
+        <div class="rack-and-image-container">
+
+            <div id="rack"></div>
+
+        </div>
+    </div>
+    <!--  Buttons call imported js functions  -->
+    <div class="button-container">
+        <button id="next-word-button" onclick="ScrabbleBoard.nextWord()">Next Word</button>
+        <button id="add-tiles" onclick="fillRack()">Add Tiles</button>
+        <button id="reset-button" onclick="ScrabbleBoard.reset()">Reset</button>
+    </div>
+</div>
+
+</body>
+</html>

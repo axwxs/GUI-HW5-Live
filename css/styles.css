@@ -1,0 +1,182 @@
+/*
+Full Name: Ali Rashid
+Date Created: 12/20/2022
+*/
+
+
+
+/* Didn't use that much styling in general */
+
+/* Most of selector rules below are just center and align the divs */
+
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    margin: 20px 0;
+}
+
+.remaining-tile-count {
+    display: flex;
+    align-content: flex-start;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+.scrabble-word {
+    display: flex;
+    align-content: flex-start;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+.displayed-score {
+    display: flex;
+    align-content: flex-start;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+.total-score {
+    display: flex;
+    align-content: flex-start;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+.middle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+    gap: 50px;
+}
+
+.middle-container .scrabble-board-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+    /*align-content: center;*/
+}
+
+.middle-container .scrabble-board-container #board {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    /*width: 100%;*/
+}
+
+.middle-container .scrabble-rack-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*align-content: center;*/
+}
+.scrabble-rack-container img {
+    /*width: 60%;*/
+    width: 750px;
+    height: 150px;
+    margin: 0 5px;
+    /*top: 100px; !* 100px from the top. Lines up the rack image with the tiles *!*/
+}
+
+#rack {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    /*width: 100%;*/
+    /*top: 100px; !* 100px from the top. Lines up the rack image with the tiles *!*/
+
+    background-image: url("../images/Scrabble_Rack.png");
+    /*background-color: green;*/
+    width: 750px;
+    height: 150px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+#rack img {
+    /*width: 60%;*/
+    width: 70px;
+    height: 70px;
+    margin: 0 5px;
+    cursor: pointer;
+
+}
+
+/* Button Styling */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*align-content: center;*/
+    gap: 5px;
+    margin-bottom: 50px;
+}
+
+/* Shapes the buttons and selects bold white font */
+
+.button-container button {
+    width: 200px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+}
+
+/* Adding some colors that are meant to signal function */
+
+#next-word-button {
+    background-color: #4CAF50;
+}
+#add-tiles {
+    background-color: #008CBA;
+}
+#reset-button {
+    background-color: #f44336;
+}
+
+
+/* Adding pointer cursor when hovering */
+#next-word-button:hover {
+    cursor: pointer;
+}
+#add-tiles:hover {
+    cursor: pointer;
+}
+#reset-button:hover {
+    cursor: pointer;
+}
